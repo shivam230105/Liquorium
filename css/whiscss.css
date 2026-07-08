@@ -1,0 +1,349 @@
+/*==========================
+WHISKY COLLECTION
+===========================*/
+
+.searchSection{
+
+    padding:90px 0;
+
+    background:#07112E;
+
+}
+
+.searchTop{
+
+    width:95%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.sectionTitle{
+
+    font-size:50px;
+
+    color:white;
+
+    font-family:serif;
+
+}
+
+.sectionTitle span{
+
+    color:#D4AF37;
+
+}
+
+.searchBox{
+
+    width:350px;
+
+}
+
+.searchBox input{
+
+    width:100%;
+
+    padding:15px 20px;
+
+    border-radius:40px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    background:#0F1C48;
+
+    color:white;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.searchBox input::placeholder{
+
+    color:#bbb;
+
+}
+
+/*==========================
+FILTER
+===========================*/
+
+.filters{
+
+    width:95%;
+
+    margin:0 auto 40px;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.filter{
+
+    padding:12px 22px;
+
+    border:none;
+
+    background:#132659;
+
+    color:white;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.filter:hover,
+
+.filter.active{
+
+    background:#D4AF37;
+
+    color:#07112E;
+
+}
+
+/*==========================
+GRID
+===========================*/
+
+.brandGrid{
+
+    width:95%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:25px;
+
+}
+
+/*==========================
+CARD
+===========================*/
+
+.brandCard{
+
+    background:#0D1A46;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.brandCard:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#D4AF37;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+/*==========================
+IMAGE
+===========================*/
+
+.brandImage{
+
+    height:220px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:grey;
+
+}
+
+.brandImage img{
+
+    width: auto;
+
+    height:92%;
+
+    object-fit:contain;
+
+    transition:.4s;
+
+}
+
+.brandCard:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*==========================
+CONTENT
+===========================*/
+
+.brandInfo{
+
+    padding:20px;
+
+}
+
+.brandType{
+
+    color:#D4AF37;
+
+    font-size:11px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.brandName{
+
+    color:white;
+
+    font-size:26px;
+
+    margin-bottom:12px;
+
+    font-family:serif;
+
+}
+
+.brandDesc{
+
+    color:#d8d8d8;
+
+    font-size:14px;
+
+    line-height:24px;
+
+    margin-bottom:20px;
+
+}
+
+/*==========================
+BUTTON
+===========================*/
+
+.explore{
+
+    display:inline-block;
+
+    padding:12px 22px;
+
+    background:#D4AF37;
+
+    color:#07112E;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.explore:hover{
+
+    background:white;
+
+}
+
+/*==========================
+RESPONSIVE
+===========================*/
+
+@media(max-width:1400px){
+
+.brandGrid{
+
+grid-template-columns:repeat(4,1fr);
+
+}
+
+}
+
+@media(max-width:1100px){
+
+.brandGrid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.searchTop{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+.searchBox{
+
+width:100%;
+
+}
+
+.brandGrid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:500px){
+
+.brandGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.sectionTitle{
+
+font-size:34px;
+
+}
+
+}
