@@ -12,44 +12,52 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-/* Top Information Bar */
+/* =======================
+   Top Contact Strip
+======================= */
 
-.top-bar{
+.top-strip{
+    position: fixed;
+    top:0;
+    left:0;
     width:100%;
+    height:42px;
     background:#000;
     color:#fff;
-    height:45px;
+    z-index:9999;
+    display:flex;
+    align-items:center;
+}
+
+.top-strip-container{
+    width:90%;
+    margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 70px;
-    font-size:14px;
-    font-family:'Poppins',sans-serif;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:1000;
-    border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
-.top-left,
-.top-right{
+.contact-left{
     display:flex;
     align-items:center;
     gap:30px;
+    font-size:14px;
 }
 
-.top-bar span{
-    display:flex;
-    align-items:center;
-    gap:8px;
+.contact-left a,
+.contact-right a{
     color:#fff;
-    letter-spacing:.5px;
+    text-decoration:none;
+    transition:.3s;
 }
 
-.top-bar span:hover{
+.contact-left a:hover,
+.contact-right a:hover{
     color:#d4af37;
-    cursor:pointer;
+}
+
+.contact-right{
+    font-size:14px;
 }
 </style>
 
