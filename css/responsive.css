@@ -119,13 +119,13 @@ input, select, textarea, button {
 @media (max-width: 900px) {
   /* Nav layout */
   #nav {
-    padding: 14px 22px !important;
+    padding: 30px 22px 14px !important;
     flex-wrap: wrap;
     background: rgba(6,13,46,0.97);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(191,160,110,0.12);
   }
-  #nav.solid { padding: 14px 22px !important; }
+  #nav.solid { padding: 30px 22px 14px !important; }
 
   /* Push nav below top-strip if present */
   .top-strip + .nav-brand,
