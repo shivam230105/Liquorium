@@ -12,14 +12,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+/* Top Information Bar */
 
-/* Top Strip */
 .top-bar{
     width:100%;
     background:#000;
@@ -28,74 +22,49 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 80px;
+    padding:0 70px;
+    font-size:14px;
+    font-family:'Poppins',sans-serif;
     position:fixed;
     top:0;
     left:0;
     z-index:1000;
-    font-size:14px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
-/* Left Side */
-.top-left{
+.top-left,
+.top-right{
     display:flex;
+    align-items:center;
     gap:30px;
 }
 
-/* Right Side */
-.top-right{
+.top-bar span{
     display:flex;
-}
-
-/* Links */
-.top-bar a{
-    color:#fff;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.top-bar a:hover{
-    color:#d4af37;
-}
-
-/* Location */
-.top-right span{
-    color:#fff;
-}
-
-/* Demo Navbar */
-.navbar{
-    margin-top:45px;
-    background:#111;
-    color:white;
-    padding:20px 80px;
-    font-size:22px;
-}
-
-/* Demo Hero */
-.hero{
-    height:90vh;
-    background:url("hero-image.jpg") center/cover no-repeat;
-    display:flex;
-    justify-content:center;
     align-items:center;
-    color:white;
-    font-size:60px;
+    gap:8px;
+    color:#fff;
+    letter-spacing:.5px;
+}
+
+.top-bar span:hover{
+    color:#d4af37;
+    cursor:pointer;
 }
 </style>
 
 </head>
 <body>
+<!-- Top Info Bar -->
 <div class="top-bar">
-
-    <div class="top-contact">
-        <a href="mailto:info@nehraeducation.com">📧 info@nehraeducation.com</a>
-
-        <a href="tel:+919876543210">📞 +91 98765 43210</a>
-
-        <span>📍 Sector 140, Noida</span>
+    <div class="top-left">
+        <span>📧 info@nehraeducation.com</span>
+        <span>📞 +91 98765 43210</span>
     </div>
 
+    <div class="top-right">
+        <span>📍 Sector 140, Noida, Uttar Pradesh</span>
+    </div>
 </div>
 <!-- ═══ NAV ═══ -->
 <nav id="nav">
