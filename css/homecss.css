@@ -82,7 +82,7 @@ body {
 .nav-cta {
   font-size: 9.5px; letter-spacing: 3px; text-transform: uppercase;
   font-weight: 600; color: var(--navy); background: var(--gold);
-  padding: 11px 26px; text-decoration: none;
+  padding: 40px 26px; text-decoration: none;
   transition: all .3s ease;
 }
 .nav-cta:hover { background: var(--gold-pale); }
